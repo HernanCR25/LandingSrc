@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Santa Rita De Cassia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/carrousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://font.google.com/css?family=Raleway:200,300,400,700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <img src="images/hamburguesa.svg" alt="" class="hamburger">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#Palabras del director">Palabras del director</a>
+            <a href="#Nosotros">Nosotros</a>
+            <a href="#Documentos de gestion">Documentos de Gestión</a>
+            <a href="#Equipo de Docentes">Equipo docente</a>
+            <a href="#Horario">Horarios</a>
+            <a href="#Actividades">Actividades</a>
+            <a href="#Himno">Himno</a>
+            <a href="#Contactenos">Contactenos</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">IEP Santa Rita de Cassia</h1>
+            <p class="copy">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+    </header>
+    <!--PALABRAS DEL EDITOR-->
+    <main>
+        <section class="content words">
+            <br>
+            <br>
+            <h2 id="Palabras del director" class="title"> Palabras del director</h2>
+            <div class="drctr">
+                <img src="images/Director.png" alt="director">
+                <div class="pdirector">
+                    <div class="service">
+                        <h3 class="n_service"><span class="number">ㅤ</span>Mensaje de nuestro Hno. Director</h3>
+                        <p>Estimada comunidad: Este año 2022, las obras lasallistas celebran los 100 años de la llegada
+                            de los Hermanos de la Salle al Perú; a propósito de esta fecha, compartimos con ustedes
+                            nuestra renovada página web institucional, espacio que permitirá mantenerlos al tanto de
+                            nuestro que hacer por el bien de nuestros alumnos, sus familias y junto con ellos el de la
+                            comunidad en general. En este marco celebratorio, vale la pena agradecer a Dios la
+                            oportunidad que nos ha dado de crecer juntos con la comunidad arequipeña, compartiendo a
+                            través de nuestros alumnos y sus familias los valores que nos distinguen: Fe, Fraternidad y
+                            Servicio. En estos 100 años, el espíritu lasallista ha crecido junto al amor por nuestra
+                            patria. Deseamos que este nuevo espacio revitalice nuestra comunicación con la comunidad y
+                            permita continuar acompañándonos unos a otros en este camino con la responsabilidad debida,
+                            en bien de la juventud, Arequipa y el Perú.</p>
+                            <br>
+                            <p>¡Viva Jesús en nuestros corazones!</p>
+                            <p>¡Por siempre!.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--NOSOTROS-->
+    <br>
+    <section class="content us">
+        <h2 id="Nosotros" class="title">Nosotros</h2>
+        <br><br>
+        <button id="open">
+            HISTORIA
+          </button>
+          
+          <div id="modal_container" class="modal-container">
+            <div class="modal">
+              <h1>RESEÑA HISTÓRICA</h1>
+              <p>
+                La institución educativa pública «Santa Rita de Cassia», surge en el año de 1962 como consecuencia del
+                desdoblamiento del entonces colegio Nacional Mixto «José Buenaventura Sepúlveda», después de ello se creó el
+                colegio Nacional de mujeres «Santa Rita de Cassia» en honor a la santa italiana que fue ejemplo de piedad,
+                bondad y fé.
+                Su primera directora fue la Dra. Aurea Torres Plascencia de Díaz, persona que destacó por su buena
+                administración educativa y la práctica de las buenas relaciones humanas.
+                Al iniciar sus actividades educativas contaba con solo ocho docentes y una sección de primer año de
+                Educación Secundaria.
+                El 22 de setiembre de 1962 se estableció en su propio local, situado hasta hoy con 78 docentes y 1600
+                alumnas, distribuidas en 43 secciones dirigidas por el actual Directora ketty Vicente bravo.
+              </p>
+              <button id="close">Cerrar</button>
+            </div>
+          </div>
+
+          <button id="open2">
+            MISIÓN
+          </button>
+          
+          <div id="modal_container2" class="modal-container2">
+            <div class="modal">
+              <h1>MISIÓN</h1>
+              <p>
+                Formar personas en el ámbito técnico profesional, considerando el sentido trascendente del hombre,
+                desarrollando en ellos competencias, que faciliten su inserción laboral, contribuyendo de esta manera al
+                desarrollo del país.
+              </p>
+              <button id="close2">Cerrar</button>
+            </div>
+          </div>
+
+          <button id="open3">
+            VISIÓN
+          </button>
+          
+          <div id="modal_container3" class="modal-container3">
+            <div class="modal">
+              <h1>VISIÓN</h1>
+              <p>
+                Ser una institución referente de excelencia de la educación técnico profesional del Perú, asociada al sector
+                productivo.
+              </p>
+              <button id="close3">Cerrar</button>
+            </div>
+          </div>
+
+          <button id="open4">
+            ORGANIGRAMA  
+          </button>
+          
+          <div id="modal_container4" class="modal-container4">
+            <div class="modal">
+              <h1>ORGANIGRAMA</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque assumenda dignissimos illo explicabo natus quia repellat, praesentium voluptatibus harum ipsam dolorem cumque labore sunt dicta consectetur, nesciunt maiores delectus maxime?
+              </p>
+              <img src="images/organigrama2.jpg" height="350">
+              <button id="close4">Cerrar</button>
+            </div>
+          </div>
+    </section>
+
+    <!--DOCUMENTOS DE GESTIÓN-->
+    <br>
+    <section class="content docs">
+        <h2 id="Documentos de gestion" class="title">Documentos de Gestión</h2>
+        <div class="docgestion">
+            <section class="pdf1">
+                <h1>PEI</h1>
+                <br>
+                <iframe src="docs/2_Art_CMG_MeetingSolutions2019.pdf" frameborder="0"></iframe>
+            </section>
+            <section class="pdf2">
+                <h1>PAT</h1>
+                <br>
+                <iframe src="docs/2_Art_CMG_MeetingSolutions2019.pdf" frameborder="0"></iframe>
+            </section>
+            <section class="pdf3">
+                <h1>Reglamento Interno</h1>
+                <br>
+                <iframe src="docs/2_Art_CMG_MeetingSolutions2019.pdf" frameborder="0"></iframe>
+            </section>
+        </div>
+    </section>
+
+    <!--EQUIPO DE DOCENTES-->
+    <section class="content team">
+        <h2 id="Equipo de Docentes" class="title">Equipo de Docentes</h2>
+        <div class="slider_container container">
+            <img src="images/flechaizq.svg" alt="" class="slider_arrow" id="before">
+
+            <section class="slider_body slider_body--show" data-id="1">
+                <div class="slider_texts">
+                    <h2 class="subtitle">Hola, Mi nombre es Alexia Sanchez</h2>
+                    <p class="slider_review">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae est porro, saepe veniam quo ducimus.
+                    </p>
+                    <figure class="slider_picture">
+                        <img src="images/Docente1.png" alt="" class="slider_img">
+                    </figure>
+                </div>
+            </section>
+
+            <section class="slider_body" data-id="2">
+                <div class="slider_texts">
+                    <h2 class="subtitle">Hola, Mi nombre es Jordan Gonzales</h2>
+                    <p class="slider_review">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae est porro, saepe veniam quo ducimus.
+                    </p>
+                    <figure class="slider_picture">
+                        <img src="images/Docente2.png" alt="" class="slider_img">
+                    </figure>
+
+                </div>
+            </section>
+
+            <section class="slider_body" data-id="3">
+                <div class="slider_texts">
+                    <h2 class="subtitle">Hola, Mi nombre es Alexander Perez</h2>
+                    <p class="slider_review">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae est porro, saepe veniam quo ducimus.
+                    </p>
+                    <figure class="slider_picture">
+                        <img src="images/Docente3.png" alt="" class="slider_img">
+                    </figure>
+
+                </div>
+            </section>
+            <img src="images/flechader.svg" alt="" class="slider_arrow" id="next">
+        </div>
+    </section>
+    <br>
+
+    <!--HORARIOS-->
+    <main>
+        <section class="content schedule">
+            <h2 id="Horario" class="title"> Horario</h2>
+            <div class="hora">
+                <img src="images/horarios.png" alt="horario">
+                <div class="phorario">
+                    <div class="xhorario">
+                        <h3 class="nhorario"><span class="number">1</span>Turno Mañana</h3>
+                        <p>7:00 A.M a 12:30 P.M</p>
+                        <br><br><br>
+                        <br>
+                        <h3 class="nhorario"><span class="number">2</span>Turno Tarde</h3>
+                        <p>1:00 P.M a 6:30 P.M</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--ACTIVIDADES-->
+    <section class="content activities">
+        <h1 id="Actividades">Galeria de imagenes</h1>
+        <section class="galeria">
+            <a href="#image1"><img src="images/Actividad1.png" alt=""></a>
+            <a href="#image2"><img src="images/Actividad2.png" alt=""></a>
+            <a href="#image3"><img src="images/Docente1.png" alt=""></a>
+            <a href="#image4"><img src="images/Director.png" alt=""></a>
+        </section>
+        <section>
+            <article class="light-box" id="image1">
+                <a href="#image4" class="next"><i class="fas fa-arrow-left"></i></a>
+                <img src="images/Actividad1.png" alt="">
+                <a href="#image2" class="next"><i class="fas fa-arrow-right"></i></a>
+                <a href="#Actividades" class="close">X</a>
+            </article>
+
+            <article class="light-box" id="image2">
+                <a href="#image1" class="next"><i class="fas fa-arrow-left"></i></a>
+                <img src="images/Actividad2.png" alt="">
+                <a href="#image3" class="next"><i class="fas fa-arrow-right"></i></a>
+                <a href="#Actividades" class="close">X</a>
+            </article>
+
+            <article class="light-box" id="image3">
+                <a href="#image2" class="next"><i class="fas fa-arrow-left"></i></a>
+                <img src="images/Docente1.png" alt="">
+                <a href="#image4" class="next"><i class="fas fa-arrow-right"></i></a>
+                <a href="#Actividades" class="close">X</a>
+            </article>
+
+            <article class="light-box" id="image4">
+                <a href="#image3" class="next"><i class="fas fa-arrow-left"></i></a>
+                <img src="images/Director.png" alt="">
+                <a href="#image1" class="next"><i class="fas fa-arrow-right"></i></a>
+                <a href="#Actividades" class="close">X</a>
+            </article>
+        </section>
+        <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymus"></script>
+    </section>
+
+    <!--HIMNO-->
+    <section class="content anthem">
+        <h1 id="Himno" class="title">Himno</h1>
+        <br>
+        <video controls>
+            <source src="videos/videoprueba.mp4" type="video/mp4">
+        </video>
+        <img src="images/pergamino3.png" alt="">
+    </section>
+    <br><br>
+
+    <!--FORMULARIO-->
+    <div id="overview">
+    	<section class="order" id="order">
+        	<h1 id="Contactenos" class="heading"><span>Contactanos</span> ahora</h1>
+        	<div id="form" class="row">
+            	<form class="form">
+                	<div class="inputBox">
+                    	<input id="NOMCLI" placeholder="Nombre" type="text" class="form-control" />
+                    	<input id="APECLI" placeholder="Apellido" type="text" class="form-control" />
+                	</div>
+                	<div class="inputBox">
+                    	<input id="CELCLI" placeholder="Celular" type="text" class="form-control" />
+                    	<input id="EMACLI" placeholder="Email" type="text" class="form-control" />
+                	</div>
+                	<textarea id="MENCLI" placeholder="Mensaje" cols="30" rows="10" class="form-control"></textarea>
+                	<button id="btnCrear" type="submit" class="btn btn-secondary">
+                    	Enviar Mensaje
+                	</button>
+            	</form>
+        	</div>
+    	</section>
+	</div>
+	<script src="pruebaContactos/resources/js/bootstrap.bundle.min.js"></script>
+	<script src="pruebaContactos/resources/registro.js"></script>
+	<link rel="stylesheet" href="pruebaContactos/resources/css/styles.css">
+
+
+
+    <!--CONCTÁCTENOS-->
+    <section class="content anthem">
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1943.1105118171035!2d-76.38688584166412!3d-13.08517415181234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x72c2c8ca00d53e37!2sIEP%20-%20Santa%20Rita%20de%20Cassia!5e0!3m2!1ses!2spe!4v1669220410875!5m2!1ses!2spe"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!--PIE DE PAGINA (FOOTER)-->
+    <footer>
+        <div class="contenedor footer-content">
+            <div class="contac-us">
+                <h2>Santa Rita de Cassia</h2>
+                <p>Av. 28 de Julio 427, San Vicente de Cañete 15701</p>
+                <p>Telefono:999999999</p>
+                <p>Correo: Santaritadecassia@hotmail.com</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/iepsantaritadecassia.canete" class="social-media-icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.vallegrande.edu.pe/" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.vallegrande.edu.pe/" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+</body>
+
+</html>
