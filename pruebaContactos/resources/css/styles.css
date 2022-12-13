@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 :root{
-  --red:#ff3838;
+  --red:#030118;
 }
 
 
@@ -13,14 +13,14 @@
 }
 
 .heading span{
-  color:var(--red);
+  color:#030118;
 }
 
 .btn{
   display: inline-block;
   padding:.8rem 3rem;
-  border:.2rem solid var(--red);
-  color:var(--red);
+  border:.2rem solid #030118;
+  color:#030118;
   cursor: pointer;
   font-size: 1.7rem;
   border-radius: .5rem;
@@ -40,7 +40,7 @@
   top:0; right: 0;
   width:0%;
   height:100%;
-  background:var(--red);
+  background:#030118;
   transition: .3s linear;
   z-index: -1;
 }
@@ -54,6 +54,14 @@
   color:#fff;
 }
 
+form .form{
+  align-items: center;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 .order .row{
   padding:2rem;

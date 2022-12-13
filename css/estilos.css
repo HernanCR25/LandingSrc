@@ -51,6 +51,7 @@ nav a:hover{
 }
 
 .hamburger{
+    /*z-index: 10; */
 	position: fixed;
     top: 30px;
     right: 30px;
@@ -93,9 +94,19 @@ nav a:hover{
 }
 
 .copy{
-	font-weight: 300;
-    font-size: 25px;
+	font-size: 60px;
+    margin-bottom: 15px;
 }
+
+/*
+body{
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5) 100%), url(../images/Insignia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+*/
 
 /* DIRECTOR */
 .content.words h2{
@@ -159,12 +170,17 @@ nav a:hover{
     color: #030118;
 }
 
+button{
+    overflow: hidden;
+    justify-content: center;
+}
+
 #open {
     background-color: #030118;
     border: 60;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: #030118;
     font-size: 24px;
     padding: 115px;
     background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5) 100%), url(../images/reseña.jpg);
@@ -178,7 +194,7 @@ nav a:hover{
     border: 60;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: #030118;
     font-size: 24px;
     padding: 115px;
     background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5) 100%), url(../images/mision.jpg);
@@ -192,7 +208,7 @@ nav a:hover{
     border: 60;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: #030118;
     font-size: 24px;
     padding: 115px;
     background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5) 100%), url(../images/vision2.jpg);
@@ -206,7 +222,7 @@ nav a:hover{
     border: 60;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: #030118;
     font-size: 24px;
     padding: 115px;
     background-image: linear-gradient(to top, rgba(161, 140, 209, 0.5) 0%, rgba(251, 194, 235, 0.5) 100%), url(../images/organigrama3.png);
@@ -450,7 +466,7 @@ iframe{
 }
 
 .phorario{
-    width: 20%;
+    width: 15%;
 }
 
 
@@ -499,95 +515,75 @@ iframe{
     padding: 20px 0;
     font-size: 40px;
 }
-.linea{
-	background:rgb(255, 0, 0);
-    height: 5px;
-    width: 100%;
-    display: block;
+
+.content.activities {
+	background: #f2f2f2;
 }
 
 .galeria{
-	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 95%;
-    margin: auto;
-    grid-gap: 10px;
-    padding: 40px 0;
-    overflow: hidden;
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.galeria > a{
+.img-galeria{
+	width: 470px;
+    height: 250px;
+    padding: 0px 10px;
     display: block;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 6px rgba(53,51, 61, .4);
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
-.galeria img{
-	width: 100%;
-    vertical-align: top;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.5s;
-}
-
-.galeria a:hover{
-    filter: blur(2px);
-    transform: rotate(10deg) scale(1.3);
-}
-
-.light-box{
-    position: fixed;
+.imagen-ligth{
+	position: fixed;
+    background: rgb(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.5);
-    transition: transform .3s ease-in-out;
-    width: 100%;
-    height: 100vh;
-    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen{
+	width: 60%;
+    border-radius: 10px;
     transform: scale(0);
+    transition: transform .3s .2s;
 }
 
-.light-box img{
-    width: 75vw;
-    max-height: 70vh;
-
+.show{
+	transform: translate(0);
 }
 
-.light-box:target{
-    transform: scale(1);
+.showImage{
+	transform: scale(1);
 }
 
 .close{
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    background:rgb(255, 0, 0);
-    color: white;
-    text-decoration: none;
+	position: absolute;
+    top: 15px;
+    right: 15px;
     width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-}
-
-.next{
-    display: block;
-    background: #851919;
-    color: rgb(255, 255, 255);
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    text-decoration: none;
-    text-align: center;
+    cursor: pointer;
 }
 
 /* HIMNO */
+
+.letra-video{
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
 .content.anthem h1{
 	text-align: center;
     padding: 20px 0;
@@ -596,10 +592,9 @@ iframe{
 
 .content video{
 	width: 45%;
-    text-align: center;
 }
 .content.anthem img{
-    position: relative;
+    position: static;
     width: 45%;
     overflow: hidden;
 }	
@@ -705,7 +700,7 @@ footer{
     }
     
     .drctr img{
-        width: 60%;
+        width: 50%;
         margin-bottom: 40px;
     }
 
