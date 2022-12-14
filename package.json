@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql": "^2.18.1"
+  },
+  "name": "landingpage",
+  "description": "SANTA RITA DE CASSIA",
+  "version": "1.0.0",
+  "main": "logins.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node login.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HernanCR25/LandingSrc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HernanCR25/LandingSrc/issues"
+  },
+  "homepage": "https://github.com/HernanCR25/LandingSrc#readme"
+}
