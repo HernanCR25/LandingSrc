@@ -161,17 +161,17 @@
             <section class="pdf1">
                 <h1>PEI</h1>
                 <br>
-                <iframe src="docs/PEI.pdf" frameborder="0"></iframe>
+                <iframe src="Docs/PEI.pdf" frameborder="0"></iframe>
             </section>
             <section class="pdf2">
                 <h1>PAT</h1>
                 <br>
-                <iframe src="docs/PAT.pdf" frameborder="0"></iframe>
+                <iframe src="Docs/PAT.pdf" frameborder="0"></iframe>
             </section>
             <section class="pdf3">
                 <h1>Reglamento Interno</h1>
                 <br>
-                <iframe src="docs/reglamento.pdf" frameborder="0"></iframe>
+                <iframe src="Docs/reglamento.pdf" frameborder="0"></iframe>
             </section>
         </div>
     </section>
@@ -307,11 +307,33 @@
     <br>
 
     <!--FORMULARIO-->
- 
+    <div id="overview">
+    	<section class="order" id="order">
+        	<h1 id="Contactenos" class="heading"><span>Contactanos</span> ahora</h1>
+        	<div id="form" class="row">
+            	<form class="form">
+                	<div class="inputBox">
+                    	<input id="NOMCLI" placeholder="Nombre" type="text" class="form-control" />
+                    	<input id="APECLI" placeholder="Apellido" type="text" class="form-control" />
+                	</div>
+                	<div class="inputBox">
+                    	<input id="CELCLI" placeholder="Celular" type="text" class="form-control" />
+                    	<input id="EMACLI" placeholder="Email" type="text" class="form-control" />
+                	</div>
+                	<textarea id="MENCLI" placeholder="Mensaje" cols="30" rows="10" class="form-control"></textarea>
+                	<button id="btnCrear" type="submit" class="btn btn-secondary">
+                    	Enviar Mensaje
+                	</button>
+            	</form>
+        	</div>
+    	</section>
+	</div>
+	<link rel="stylesheet" href="css/styles2.css">
+    <br>
+    <br>
 
     <!--CONCTÁCTENOS-->
     <section class="content anthem">
-        <h1 id="Contactenos" class="title">Contactenos</h1>
         <br>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1943.1105118171035!2d-76.38688584166412!3d-13.08517415181234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x72c2c8ca00d53e37!2sIEP%20-%20Santa%20Rita%20de%20Cassia!5e0!3m2!1ses!2spe!4v1669220410875!5m2!1ses!2spe"
@@ -343,6 +365,7 @@
         </div>
         <div class="line"></div>
     </footer>
+    <script src="conexionBD/registro.js"></script>
 </body>
 
 </html>
